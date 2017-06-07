@@ -25,11 +25,17 @@ Make sure Postgres and Redis are started, and then start the server with:
 $ foreman start
 ```
 
-The first time you run the application, you'll also need to setup the database. If you make any database changes you can also run this again:
+
+The first time you run the application, you'll also need to setup the database:
 
 ```sh
 $ rails db:reset
 ```
+
+If you make any database changes you can also run this again using the same command.
+** warning: running this command will also delete all your data. ** 
+
+
 
 You can use the rails console to explore the database through using [ActiveRecord](http://guides.rubyonrails.org/active_record_querying.html):
 
